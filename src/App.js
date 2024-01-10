@@ -1,20 +1,71 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import "./App.css";
 function App() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Show button when user scrolls down 20px
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 20) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  // Scroll to top of page when the button is clicked
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
   return (
     <div className="app">
       <Header />
       <Home />
       <Footer />
-      <a target="_black" class="Link" href="https://wa.me/9003592434">
+      <a
+        target="_black"
+        class={` ${window.pageYOffset < 20 ? "bottom-link" : "Link"} Link`}
+        href="https://wa.me/9003592434"
+      >
         <img
           src="https://download.logo.wine/logo/WhatsApp/WhatsApp-Logo.wine.png"
           alt="Logo"
         />
       </a>
+      {window.pageYOffset > 20 && (
+        <div className={`scroll-to-top ${isVisible ? "show" : ""}`}>
+          <button onClick={scrollToTop}>
+            {/* <FaArrowUp /> */}
+            <svg
+              width={24}
+              height={24}
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </button>
+        </div>
+      )}
     </div>
   );
 }

@@ -2,11 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: ease-in-out 0.5s;
 }
-.Link {
+.Link,
+.scroll-to-top {
   position: fixed;
-  bottom: 0;
+  bottom: 80px;
   right: 0;
+  transition: ease-in-out 0.5s;
   margin: 0;
 }
 .Link:hover {
@@ -16,4 +19,32 @@
 .Link img {
   width: 150px;
   height: 100%;
+  transition: ease-in-out 0.5s;
+}
+.scroll-to-top {
+  bottom: 30px;
+  width: 55px;
+  right: 45px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: ease-in-out 0.5s;
+}
+.scroll-to-top button {
+  outline: none;
+  border: none;
+  /* padding: 0px 60px; */
+  background-color: transparent;
+  cursor: pointer;
+}
+.scroll-to-top svg {
+  rotate: 180deg;
+}
+
+.bottom-link {
+  bottom: 0 !important;
 }
