@@ -1,4 +1,18 @@
-.galleryHomePage-imgage-slider img{
-    width: 30rem;
-    height: 25rem;
+.galleryHomePage-imgage-slider img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.galleryHomePage-top-parent {
+  padding: 90px;
+}
+.slick-slide {
+  margin-left: 20px;
+}
+
+.Slider {
+  width: 1300px;
+  height: 500px;
 }
