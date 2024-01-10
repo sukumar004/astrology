@@ -1,0 +1,64 @@
+.our-services{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+
+.our-services-nadi-astrology,.our-services-homam-pooja,.our-services-online-prediction{
+    width: 25%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 3rem;
+    text-transform: capitalize;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    color: var(--color6);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.our-services-nadi-astrology{
+    background-image: url('./kandam.jpeg');
+    object-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.our-services-homam-pooja{
+    background-image: url('./homam.jpg');
+    object-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+.our-services-online-prediction{
+    background-image: url('./onlineNadi.png');
+    object-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+
+}
+
+.our-services-homam-pooja:hover,.our-services-nadi-astrology:hover,.our-services-online-prediction:hover{
+    opacity: .8;
+}
+
+.our-services-homam-pooja h1{
+    word-wrap: break-word;
+}
+
+

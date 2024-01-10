@@ -1,0 +1,297 @@
+.home-top-parent{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-header-bottom-section{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f78849;
+    background-image: linear-gradient(62deg, #f78849 0%, #F7CE68 100%);
+}
+
+.home-header-bottom-section-img{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+.home-header-bottom-section-img img{
+    width: 25rem;
+    height: 25rem;
+    margin: 0 10rem 0 0;
+
+}
+
+.home-header-bottom-section-title{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 0 10rem;
+  word-wrap: break-word;
+  color: var(--color8);
+  
+  /* border: 1px solid white; */
+
+}
+
+.home-header-bottom-section-title h1{
+    font-size: 3rem;
+    word-wrap: break-word;
+    line-height: 4rem;
+    margin: 0;
+    font-weight: 800
+}
+
+.home-header-bottom-section-title h3{
+    font-size: 1.5rem;    
+}
+
+.home-header-bottom-section-title p button{
+    font-size: 1rem;
+    padding: .3rem;
+    background:transparent ;
+    border-radius: 5px;
+    margin: 0 1rem 0 0;
+    border: 3px solid var(--color1);
+    cursor: pointer;
+    transition: all;
+    transition-duration: 250ms;
+    font-weight: 600;
+    color: var(--color1);
+}
+
+.home-header-bottom-section-title p button:hover{
+    border-color:var(--color6) ;
+    color: var(--color6);
+}
+
+#tirukkural-id{
+    width: max-content;
+    padding: 1rem;
+    margin: 2rem 0 0 0rem;
+    border: 3px solid var(--color6);
+    border-radius: 10px;
+    color: var(--color6);
+    font-weight: 800;
+}
+
+#tirukkural-id span{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: .8rem;
+    margin: 1rem 0 0 0; 
+}
+
+.nadi-astrology-home-page-top-parent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.nadi-astrology-home-page-bg{
+    width: 100%;
+    margin: 2rem 0 0 0;
+    background-image: url('./bg-13.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nadi-astrology-home-page-top-parent h1{
+    margin: 3rem 0 -2rem 0;
+    text-transform: capitalize;
+    font-size: 2.8rem;
+    text-align: center;
+    color: var(--color8);
+    font-weight: 800;
+    word-wrap: break-word;
+    letter-spacing: 2px;
+    line-height: 4.5rem;
+
+}
+
+.nadi-astrology-home-page-bg h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2.8rem;
+    color: var(--color9);
+    padding: 1rem 2rem;
+    /* margin-left: 10%; */
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.home-page-naadi-procedure-top-parent{
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page-naadi-procedure-top-parent h1{
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color1);
+}
+
+#home-page-naadi-top-heading{
+    margin: 0 0 -3rem 0;
+}
+
+.home-our-service-page-top-parent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0 0;
+}
+
+.home-our-service-page-top-parent h1{
+    margin: 0 0 -3rem 0;
+    font-size: 2.8rem;
+    color: var(--color8);
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.home-about-us-page-top-parent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.home-about-us-page-top-parent h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    color: var(--color1);
+    margin: 0 0 -3rem 0;
+    
+}
+
+.home-about-us-famous-heading{
+    width: 100%;
+    height: 10rem;
+    background-image: url('./bg-19.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-bottom: 4rem;
+    /* border: 1px solid rebeccapurple; */
+}
+
+#famous-manuscript-id,#famous-badge-id{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    position: absolute;
+}
+
+#famous-badge-id{
+    left: 5rem;
+}
+
+#famous-manuscript-id{
+    right: 5rem;
+}
+.home-about-us-bg{
+    width: 100%;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./bg-28.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-about-us-bg h2{
+    color: var(--color6);
+    /* color: #FFC087; */
+    /* color: #FFB17A; */
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    padding: 1rem;
+}
+
+
+.home-about-us-famous-heading h1{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color4);
+    font-size: 2.3rem;
+    overflow: hidden;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: .6rem;
+}
+
+.home-languages-parent{
+    width: 100%;
+}
+
+.home-page-location-map{
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.home-page-location-map iframe{
+    width: 80%;
+    height: 30rem;
+
+}
+
+#divider-id{
+    width: 20vw;
+    /* border: 1px solid black; */
+    height: 10rem;
+}
+
+#border-id{
+    width: 90%;
+    height: 50rem;
+    border: 1px solid black;
+    position: absolute;
+}

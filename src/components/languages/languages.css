@@ -1,0 +1,52 @@
+.languages-top-parent{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10%;
+    /* border: 1px solid black; */
+}
+
+.languages-top-parent h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: var(--color1);
+    text-transform: capitalize;
+    margin: 4rem 0 -2.5rem 0;
+}
+
+.languages-parent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+    gap: 2rem;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.languages-show-div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* cursor: pointer; */
+    background-color: var(--color5);
+    color: var(--color6);
+    transition: all;
+    transition-duration: 250ms;
+    border-radius: 10px;
+}
+
+.languages-show-div h2{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+#language-sysmbol-id{
+    font-size: 2rem;
+}
+
+.languages-show-div:hover{
+    background-color: var(--color4);
+    color: var(--color1);
+}
