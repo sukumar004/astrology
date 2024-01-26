@@ -5,9 +5,36 @@
   border-radius: 20px;
 }
 
-.galleryHomePage-top-parent {
+.galleryHomePage-parent {
   padding: 90px;
+  width: 100%;
 }
+
+.gallerrHomePage-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallerrHomePage-title h1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid black; */
+  font-size: 3rem;
+  letter-spacing: 3px;
+  color: var(--color1);
+  margin: 0 0 2rem -10rem;
+}
+
+.gallerrHomePage-title img{
+  width: 20vw;
+  /* border: 1px solid black; */
+  height: 10rem;
+  margin: -4rem 0 2rem -10rem;
+
+}
+
 .slick-slide {
   margin-left: 20px;
 }
@@ -15,4 +42,8 @@
 .Slider {
   width: 1300px;
   height: 500px;
+}
+
+.slick-dots{
+  margin-bottom: -1rem;
 }

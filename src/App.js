@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Header from "./components/header/Header";
 import Home from "./components/home/Home";
-import Footer from "./components/footer/Footer";
+import { Routes,Route } from "react-router-dom";
 import "./App.css";
+import Layout from "./components/layout/Layout";
+import AboutUs from "./components/aboutUs/AboutUs";
+import Chapters from "./components/chapters/Chapters";
+import OnlineServices from "./components/online/OnlineServices";
+
+
 function App() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -31,9 +36,21 @@ function App() {
   }, []);
   return (
     <div className="app">
-      <Header />
-      <Home />
-      <Footer />
+      <>
+      <Routes>
+
+        <Route path="/" element={<Layout />}>
+
+          <Route index element={<Home />} />
+          <Route path="/aboutUs" element = {<AboutUs />} />
+          <Route path="/chapters" element = {<Chapters />} />
+          <Route path="/onlineServices" element = {<OnlineServices />} />
+
+
+        </Route>
+
+      </Routes>        
+      </>
       <a
         target="_black"
         class={` ${window.pageYOffset < 20 ? "bottom-link" : "Link"} Link`}

@@ -1,0 +1,39 @@
+.online-services-top-parent{
+    width: 100%;
+    height: max-content;
+}
+
+.online-services-heading{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-bottom-right-radius:100px;
+    
+}
+
+.online-services-heading h1{
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+.online-nadi-prediction-top-parent{
+    width: 100%;
+    height: max-content;
+}
+
+.online-nadi-procedure-top-parent{
+    width: 100%;
+    height: max-content;
+}
+
+.online-nadi-procedure-top-parent h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+}

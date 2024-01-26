@@ -1,7 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './header.css'
+import { IoIosArrowDown } from "react-icons/io";
 
 function Header() {
+
+  
   return (
     <div className="header-top-parent">
         <div className="header-logo">
@@ -12,9 +16,10 @@ function Header() {
 
         <div className="header-nav-menu">
             <ul>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Services</li>
+                <Link to='/'><li>Home</li></Link>
+                <Link to='/aboutUs'><li>About us</li></Link>
+                <li>Services <span id='header-bottom-arrow'><IoIosArrowDown /></span></li>
+                
                 <li>Online</li>
                 <li>Contact us</li>
             </ul>

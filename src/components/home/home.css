@@ -16,6 +16,10 @@
   align-items: center;
   background-color: #f78849;
   background-image: linear-gradient(62deg, #f78849 0%, #f7ce68 100%);
+  /* background-image: url('./bg-17.jpeg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home-header-bottom-section-img {

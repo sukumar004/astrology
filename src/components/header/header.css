@@ -19,6 +19,7 @@
 .header-nav-menu ul{
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .header-nav-menu ul li{
@@ -30,8 +31,11 @@
     transition: all;
     transition-duration: 250ms;
     border-bottom: 2px solid var(--color3);
+
 }
 
 .header-nav-menu ul li:hover{
     border-bottom-color:2px solid var(--color6);
 }
+
+

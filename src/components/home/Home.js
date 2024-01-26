@@ -12,7 +12,7 @@ function Home() {
     <div className="home-top-parent">
       <div className="home-header-bottom-section">
         <div className="home-header-bottom-section-img">
-          <img src="/images/circle3.png" alt="Agasthiya Munivar" />
+          <img src="/images/circle3.png" alt="Astrology Horowscope" />
         </div>
 
         <div className="home-header-bottom-section-title">

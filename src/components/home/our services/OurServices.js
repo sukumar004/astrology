@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './ourServices.css'
 
 function OurServices() {
@@ -8,7 +9,7 @@ function OurServices() {
             <h2>Online Nadi Prediction</h2>
         </div>
         <div className="our-services-nadi-astrology">
-            <h2>Chapters</h2>
+            <Link to='/chapters'><h2>Chapters</h2></Link>
         </div>
         <div className="our-services-homam-pooja">
            <h2>Homam Pooja</h2>

@@ -5,9 +5,9 @@ const Footer = () => {
     <>
       <footer className="footer">
         <div className="footer__addr">
-          <h1 className="footer__logo">Astro Nadi Service</h1>
+          <h1 className="footer__logo">Astro Naadi Service Logo</h1>
           <h2>Contact</h2>
-          <address>
+          {/* <address>
             5534 Somewhere In. The World 22193-10212
             <br />
             <a
@@ -27,7 +27,7 @@ const Footer = () => {
             <a target="_blank" className="footer__btn" href="tel:+919003592434">
               Call Us
             </a>
-          </address>
+          </address> */}
         </div>
         <ul className="footer__nav">
           <li className="nav__item">

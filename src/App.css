@@ -8,13 +8,13 @@
 .scroll-to-top {
   position: fixed;
   bottom: 80px;
-  right: 0;
+  right: 0px;
   transition: ease-in-out 0.5s;
   margin: 0;
 }
 .Link:hover {
   scale: 1.1;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.3s;
 }
 .Link img {
   width: 150px;

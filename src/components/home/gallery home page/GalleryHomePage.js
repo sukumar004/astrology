@@ -25,6 +25,7 @@ function GalleryHomePage() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    dots:true
   };
 
   const imgSliderShow = imgPath.map((img, index) => {
@@ -36,7 +37,14 @@ function GalleryHomePage() {
   });
 
   return (
-    <div className="galleryHomePage-top-parent">
+    <div className="galleryHomePage-parent">
+
+      <div className="gallerrHomePage-title">
+      <h1>Gallery</h1>
+        <img src="/svg/divider1.svg" alt="divider" id="divider-gallery-id" />
+      </div>
+
+
       <Slider {...settings} className="Slider">
         {imgSliderShow}
       </Slider>

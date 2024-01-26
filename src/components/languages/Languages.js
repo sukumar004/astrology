@@ -6,9 +6,10 @@ function Languages() {
     const languages = [
         {symbol:'த',language:'Tamil'},
         {symbol:'En',language:'English'},
+        {symbol:'हे',language:'Hindi'},
         {symbol:'മ',language:'Malayalam'},
         {symbol:'తె',language:'Telugu'},
-        {symbol:'ಕ',language:'Kannada'}
+        {symbol:'ಕ',language:'Kannada'},
     ]
     const languageDiv = languages.map((lan,index)=>{
         return(
