@@ -34,6 +34,8 @@ function AboutUs() {
 
   return (
     <div className="about-us-top-parent">
+        
+     
 
         {aboutUsData.map((data)=>{
             return(
@@ -42,8 +44,17 @@ function AboutUs() {
                 <h1>{data.title}</h1>
             </div>
 
+            <div className="about-us-main-page-heading">
+            <h1>Vaitheeswarankoil Famous Nadi Astrology</h1>
+            <img src="/svg/divider4.svg" alt="divider" id='divider-id' />
+
+            <h3>Four Generations of Nadi Heritage</h3>
+            {/* <img src="/svg/divider3.svg" alt="divider" id='divider-id' /> */}
+            </div>
+
             <div className="about-us-details">
 
+                
                 <div className="about-us-image">
                     <img src={data.img} alt={data.name} />
                     <h3>{data.name}</h3>

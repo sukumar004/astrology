@@ -42,6 +42,8 @@ function Chapters() {
 
         <div className="chapter-page-heading-bg">
             <h1>Chapters</h1>
+            {/* <img src="/chaptersImages/h-1.png" alt="Chapters" /> */}
+            {/* <img src="/chaptersImages/h-3.png" alt="Chapters" /> */}
         </div>
 
         <div className="chapter-list-parent">

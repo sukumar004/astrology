@@ -18,12 +18,13 @@ function OnlineNadiPrediction() {
 
         <div className="online-nadi-prediction-heading">
             <h1>Online Nadi Prediction</h1>
+            <img src="/svg/divider3.svg" alt="divider" id="divider-id" />
         </div>
 
         <div className="online-nadi-prediction-listing">
 
             <div className="online-nadi-prediction-listing-img">
-                <img src="/images/bg-1.jpg" alt="Heading" />
+                <img src="/onlineNadiPrediction/np-1.jpeg" alt="Heading" />
             </div>
 
             <div className="online-nadi-prediction-listing-content">

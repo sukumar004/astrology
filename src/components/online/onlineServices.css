@@ -3,6 +3,20 @@
     height: max-content;
 }
 
+/* .online-services-heading::before{
+    background-image: url('./bg-14.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    width: 100%;
+    height: 43%;
+    border-bottom-right-radius:100px;
+    position: absolute;
+    z-index: 999;
+    filter: blur(5px);
+} */
+
 .online-services-heading{
     width: 100%;
     height: 20rem;
@@ -10,15 +24,21 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
-    border-bottom-right-radius:100px;
-    
+    border-bottom-right-radius:100px;    
+    background-image: url('./bg-14.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .online-services-heading h1{
     font-size: 3.5rem;
     letter-spacing: 3px;
+    font-weight: 900;
     text-transform: capitalize;
+    color: var(--color8);
+    z-index: 999;
 }
 
 .online-nadi-prediction-top-parent{
@@ -29,11 +49,58 @@
 .online-nadi-procedure-top-parent{
     width: 100%;
     height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-.online-nadi-procedure-top-parent h1{
+#online-nadi-procedure-component{
+    margin: -2rem 0 0 0;
+}
+
+/* .online-nadi-procedure-top-parent h1{
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
     letter-spacing: 3px;
+    color: var(--color1);
+} */
+
+#divider-id-nadi-procedure{
+   width: 20vw;
+   margin: -4rem 0 0 0;   
+}
+
+.book-appointment-topic-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.book-appointment-top-parent{
+    width: 100%;
+    height: max-content;
+    background-image: url('./bg-5.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0;
+    opacity: .9;
+    /* margin: -3rem 0 0 0; */
+
+}
+
+.online-services-languages{
+    margin: 0 0 8rem 0 ;
+}
+
+#onlineService-heading-id{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    color: var(--color1);
 }

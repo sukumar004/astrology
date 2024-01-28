@@ -7,11 +7,16 @@
 .online-nadi-prediction-heading {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    /* background-color: #FFECCC; */
     margin: 5rem 0 3rem 0;
+}
+
+.online-nadi-prediction-heading img{
+    margin: -5rem 0 -3rem 0;
 }
 
 .online-nadi-prediction-heading h1{
@@ -19,15 +24,19 @@
     text-transform: capitalize;
     letter-spacing: 3px;
     font-size: 2.5rem;
+    color: var(--color1);
+    
 }
 
 .online-nadi-prediction-listing{
     width: 80%;
     height: max-content;
-    /* border: 1px solid purple; */
+    /* border: 1px solid purple;    */
     margin: 0 10%;
     display: flex;
     flex-direction: row;
+
+    
 }
 
 .online-nadi-prediction-listing-img{
@@ -49,7 +58,8 @@
 .online-nadi-prediction-listing-content{
     width: 100%;
     height: max-content;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
+    /* background-color: red; */
 }
 
 .online-nadi-data-list{
@@ -70,7 +80,8 @@
    padding: 1rem;
    font-weight: 600;
    letter-spacing: 2px;
-   font-size: .8rem;
-   line-height: 1.3rem;
+   font-size: .9rem;
+   line-height: 1.5rem;
+   color: var(--color8);
     /* border: 1px solid green; */
 }

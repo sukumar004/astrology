@@ -28,6 +28,11 @@ function OnlineNadiProcedure() {
         id:5,
         img:'/onlineNadiProcedure/5.png',
         content:'Fill and submit the below form'
+    },
+    {
+        id:6,
+        img:'/onlineNadiProcedure/6.png',
+        content:'After Booking your appointment we will contact you within 24hrs'
     }
 
 ]
