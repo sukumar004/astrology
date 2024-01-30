@@ -1,0 +1,106 @@
+.homam-top-parent{
+    width: 100%;
+    height: max-content;
+}
+
+.homam-heading::before{
+    width: 100%;
+    height: 20rem;
+    content: '';
+    position: absolute;
+    background-image: url('./bg-1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius:110px;
+    z-index: 999;
+    filter: blur(2px);
+}
+
+.homam-heading{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.homam-heading h1{
+    letter-spacing: 3px;
+    font-size: 3.5rem;
+    color: var(--color6);
+    z-index: 99999;
+}
+
+.homam-listing{
+    width: 80%;
+    height: 26rem;
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 10%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-image: url('./bg-3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* border: 1px solid black; */
+}
+
+.homam-listing:nth-of-type(odd){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.homam-listing:nth-of-type(odd) .homam-listing-image img{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;  
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-left: 2px solid var(--color4);
+    border-right: none;
+}
+
+.homam-listing-image{
+    width: max-content;
+    height: max-content;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.homam-listing-image img{
+    width: 26rem;
+    height: 26rem;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px; 
+    border-right: 2px solid var(--color4); 
+
+}
+
+.homam-listing-details{
+    width: 100%;
+    height: max-content;
+    padding: 2rem 3rem;
+    word-wrap: break-word;
+}
+
+.homam-listing-details h3{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: var(--color6);
+}
+
+.homam-listing-details p{
+    font-size: 1rem;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+    text-align: justify;
+    font-weight: 600;
+    color: var(--color4);
+}
+

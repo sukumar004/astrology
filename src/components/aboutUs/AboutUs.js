@@ -4,7 +4,7 @@ import './aboutUs.css'
 function AboutUs() {
 
     const aboutUsData  = [{
-        title:'About Us',
+        title:'About us',
         img:'./images/photo.png',
         name:'Guruji K Muthulingam',
         content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aperiam in suscipit exercitationem! Beatae similique ipsum ipsam illo suscipit earum, accusamus saepe odit amet, harum possimus, aut laudantium nulla. Cumque. 

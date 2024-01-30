@@ -21,7 +21,7 @@ function Header() {
                 <li>Services <span id='header-bottom-arrow'><IoIosArrowDown /></span></li>
                 
                 <li>Online</li>
-                <li>Contact us</li>
+                <Link to='/contactUs'><li>Contact us</li></Link>
             </ul>
         </div>
     </div>

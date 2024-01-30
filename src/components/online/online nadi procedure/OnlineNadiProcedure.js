@@ -32,7 +32,7 @@ function OnlineNadiProcedure() {
     {
         id:6,
         img:'/onlineNadiProcedure/6.png',
-        content:'After Booking your appointment we will contact you within 24hrs'
+        content:'Once appointment booked we will contact you within 24hrs'
     }
 
 ]

@@ -6,6 +6,8 @@ import Layout from "./components/layout/Layout";
 import AboutUs from "./components/aboutUs/AboutUs";
 import Chapters from "./components/chapters/Chapters";
 import OnlineServices from "./components/online/OnlineServices";
+import ContactUs from "./components/contactUs/ContactUs";
+import Homam from "./components/homam/Homam";
 
 
 function App() {
@@ -45,6 +47,8 @@ function App() {
           <Route path="/aboutUs" element = {<AboutUs />} />
           <Route path="/chapters" element = {<Chapters />} />
           <Route path="/onlineServices" element = {<OnlineServices />} />
+          <Route path="/contactUs" element = {<ContactUs />} />
+          <Route path="/Homam" element={<Homam />} />
 
 
         </Route>
