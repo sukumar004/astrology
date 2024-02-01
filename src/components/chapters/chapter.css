@@ -22,6 +22,8 @@
     border-bottom-right-radius:100px;
     z-index: 999;
     filter: blur(2px);
+    /* filter: sepia(50%); */
+    /* filter: grayscale(30%); */
     /* border: 1px solid red; */
 }
 
@@ -48,12 +50,12 @@
     z-index: 99999;
 }
 
-.chapter-page-heading-bg img{
+/* .chapter-page-heading-bg img{
     width: 10rem;
     height: 10rem;
     position: absolute;
     right: 25%;
-}
+} */
 
 .chapter-list-parent{
     width: 80%;

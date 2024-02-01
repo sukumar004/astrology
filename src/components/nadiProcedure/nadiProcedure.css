@@ -1,0 +1,138 @@
+.nadi-procedure-top-parent{
+    width: 100%;
+    height: max-content;
+    /* background-color: var(--bg1); */
+
+}
+:root{
+    --bg1:#FFEECB;
+    /* --bg2:#402E32; */
+    --bg2:#FFF8E6;
+
+}
+.nadi-procedure-heading::before{
+    width: 100%;
+    height: 20rem;
+    border-bottom-right-radius: 110px;
+    content:'';
+    position: absolute;
+    background-image: url('./bg-2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+}
+
+.nadi-procedure-heading{
+    width: 100%;
+    position: relative;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 110px;
+    /* border: 1px solid black; */
+}
+
+.nadi-procedure-heading h1{
+    letter-spacing: 3px;
+    font-size: 3.5rem;
+    color: var(--color8);
+    z-index: 99999;
+}
+
+.nadi-procedure-listing-parent{
+    /* margin: -5rem 0 0 0; */
+    /* background-color: aliceblue; */
+    /* margin-top: -10rem; */
+    /* margin: 0; */
+}
+
+.nadi-procedure-listing{
+    width: 80%;
+    height: max-content;
+    margin: 5rem 10% 0rem 10%;
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    /* border: 1px solid green; */
+}
+
+
+.nadi-procedure-image-list{
+    width: 100%;
+    height: 33rem;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 1rem 3rem 1rem; 
+    /* border: 5px solid orange; */
+    background-color: var(--bg2);
+}
+
+.nadi-procedure-image-list:nth-of-type(odd){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+.nadi-procedure-list-title h3{
+    font-size: 2rem;
+    margin: 2rem 0 -3rem 0;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: 800;
+    color: var(--color2);
+
+}
+
+.nadi-procedure-image{
+    width: 100%;
+    height: 100%;
+    padding: 3rem 2rem 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* border: 1px solid red; */
+}
+
+.nadi-procedure-image img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 10px;
+    /* border: 5px solid orange; */
+
+}
+
+.nadi-procedure-list{
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    /* border: 1px solid yellow; */
+}
+
+.nadi-procedure-list h4{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    word-wrap: break-word;   
+    line-height: 3rem; 
+    font-weight: 800;
+    color: var(--color8);
+    
+}
+
+.nadi-procedure-list p{
+    font-size: .9rem;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    margin: 1.5rem 0;
+    text-align: justify;
+    color: var(--color3);
+    font-weight: 600;
+}

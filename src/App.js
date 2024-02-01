@@ -8,6 +8,8 @@ import Chapters from "./components/chapters/Chapters";
 import OnlineServices from "./components/online/OnlineServices";
 import ContactUs from "./components/contactUs/ContactUs";
 import Homam from "./components/homam/Homam";
+import NadiAstrology from "./components/nadiAstrology/NadiAstrology";
+import NadiProcedure from "./components/nadiProcedure/NadiProcedure";
 
 
 function App() {
@@ -49,6 +51,8 @@ function App() {
           <Route path="/onlineServices" element = {<OnlineServices />} />
           <Route path="/contactUs" element = {<ContactUs />} />
           <Route path="/Homam" element={<Homam />} />
+          <Route path="/nadiAstrology" element={<NadiAstrology />} />
+          <Route path="/nadiProcedure" element={<NadiProcedure />} />
 
 
         </Route>
