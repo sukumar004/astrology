@@ -15,6 +15,7 @@ function Header() {
         </div>
 
         <div className="header-nav-menu">
+          <a href='tel:+1800229933'><h2 className='phone_number'>+91883248347348</h2></a>
             <ul>
                 <Link to='/'><li>Home</li></Link>
                 <Link to='/aboutUs'><li>About us</li></Link>

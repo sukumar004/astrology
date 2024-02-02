@@ -15,7 +15,10 @@
     z-index: 99999999;
     
 }
-
+.header-nav-menu{
+    display: flex;
+    align-items: center;
+}
 .header-nav-menu ul{
     display: flex;
     flex-direction: row;
@@ -39,3 +42,9 @@
 }
 
 
+.phone_number{
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-size: 16px;
+}
