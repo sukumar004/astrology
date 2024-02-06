@@ -142,6 +142,99 @@
     font-weight: 600;
     color: var(--color4);
     text-align: justify;
-    /* margin-bottom: 1rem; */
-    /* letter-spacing: 2px; */
+}
+
+@media screen and (max-width: 1024px){
+
+    .chapter-page-heading-bg{
+        width: 100vw;
+        height: 15rem;
+    }
+
+    .chapter-page-heading-bg::before{
+        width: 100vw;
+        height: 15rem;
+        filter: blur(5px);
+    }
+
+    .chapter-list{
+        width:90vw;
+        height: max-content;
+        height: 23rem;
+        display: flex;   
+        flex-direction: row;
+        align-items: center;   
+  
+    }
+
+
+    .chapter-img{
+        width: max-content;
+        height: max-content;
+    }
+
+    .chapter-img img{
+        width: 18rem;
+        height: 23rem;
+        border-right: 5px solid var(--color4);
+    }
+
+    .chapter-list:nth-of-type(even) .chapter-img img{
+        border-left: 5px solid var(--color4);
+    }
+
+    .chapter-details h1{
+        font-size: 1rem;
+    }
+
+    .chapter-details h3{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .chapter-details p{
+        font-size: .8rem;
+        margin: 1rem 0 0 0;
+        line-height: 1.5rem;
+        text-align: justify;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    
+    .chapters-top-parent{
+        width: 100vw;
+        height: max-content;
+    }
+
+    .chapter-page-heading-bg{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .chapter-page-heading-bg::before{
+        width: 100vw;
+    }
+    .chapter-list-parent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chapter-list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chapter-list:nth-of-type(even){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    
 }
