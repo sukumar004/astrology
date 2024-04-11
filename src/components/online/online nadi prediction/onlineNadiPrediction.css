@@ -125,4 +125,10 @@
         padding: 0;
     }
 
+    .online-nadi-prediction-listing-img img{
+        position: static;
+        top: 0;
+        right: 0;
+    }
+
 }
