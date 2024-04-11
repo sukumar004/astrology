@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./galleryHomePage.css";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function GalleryHomePage() {
+
+  useEffect(()=>{
+    Aos.init()
+},[])
+
   const imgPath = [
     "/images/img-1.jpg",
     "/images/img-2.jpg",
@@ -28,9 +35,12 @@ function GalleryHomePage() {
     dots:true
   };
 
+
+  // console.log("screenWidth : ",screenWidth)
+
   const imgSliderShow = imgPath.map((img, index) => {
     return (
-      <div className="galleryHomePage-imgage-slider" key={index}>
+      <div className="galleryHomePage-imgage-slider" key={index} data-aos='fade-up' data-aos-duration='1500'>
         <img src={img} alt="image" />
       </div>
     );
@@ -40,7 +50,7 @@ function GalleryHomePage() {
     <div className="galleryHomePage-parent">
 
       <div className="gallerrHomePage-title">
-      <h1>Gallery</h1>
+      <h1 data-aos="zoom-up" data-aos-duration='1500'>Gallery</h1>
         <img src="/svg/divider1.svg" alt="divider" id="divider-gallery-id" />
       </div>
 

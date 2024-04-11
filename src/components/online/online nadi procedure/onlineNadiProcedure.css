@@ -79,3 +79,46 @@
     word-wrap: break-word;
 }
 
+
+@media screen and (max-width:1024px) {
+
+    .online-nadi-procedure-steps-listing{
+        width: 80%;
+        margin: 3rem 10%;
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        padding: 2rem 1rem 3rem 1rem;
+    }
+
+    
+}
+
+@media screen and (max-width:768px) {
+
+    .online-nadi-procedure-steps-listing{
+        width: 100vw;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin: 0;
+       padding: 2rem 0;
+    }   
+
+    .online-nadi-procedure-data-list h3{
+        font-size: 1.3rem;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .online-nadi-procedure-data-img-content{
+        width: 20rem;
+        height: 15rem;
+    }
+
+    #onlineService-heading-id{
+        font-size: 1.3rem;
+    }
+
+    
+}

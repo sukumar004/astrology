@@ -1,92 +1,97 @@
 import React from "react";
 import "./footer.css";
+import { IoLocationSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
+
+
 const Footer = () => {
+
+  const d = new Date();
+
   return (
-    <>
-      <footer className="footer">
-        <div className="footer__addr">
-          <h1 className="footer__logo">Astro Naadi Service Logo</h1>
-          <h2>Contact</h2>
-          {/* <address>
-            5534 Somewhere In. The World 22193-10212
-            <br />
-            <a
-              target="_black"
-              className="footer__btn"
-              href="mailto:example@gmail.com"
-            >
-              Email Us
-            </a>
-            <a
-              target="_black"
-              class="footer__btn"
-              href="https://wa.me/9003592434"
-            >
-              WhatsApp Us
-            </a>
-            <a target="_blank" className="footer__btn" href="tel:+919003592434">
-              Call Us
-            </a>
-          </address> */}
+
+    <div className="footer">
+  
+    <div className="footer-top-parent">
+
+      <div className="footer-logo-address">
+
+        <div className="footer-logo-parent">
+
+          <div className="footer-logo">  
+          <img src="/logo/logoPng.png" alt="Agasthiya Nadi Sastralayam" />
+          <h3>Agasthiya Nadi Sastralayam</h3>
+          </div>
+
+          <div className="footer-social-media-icons">
+            <img src="/socialMedia/facebook.png" alt="facebook" />
+            <img src="/socialMedia/instagram.png" alt="instagram" />
+            <img src="/socialMedia/youtube.png" alt="youtube" />
+          </div>
+
         </div>
-        <ul className="footer__nav">
-          <li className="nav__item">
-            <h2 className="nav__title">Media</h2>
-            <ul className="nav__ul">
-              <li>
-                <a href="#">Online</a>
-              </li>
-              <li>
-                <a href="#">Print</a>
-              </li>
-              <li>
-                <a href="#">Alternative Ads</a>
-              </li>
-            </ul>
-          </li>
-          <li className="nav__item nav__item--extra">
-            <h2 className="nav__title">Technology</h2>
-            <ul className="nav__ul nav__ul--extra">
-              <li>
-                <a href="#">Hardware Design</a>
-              </li>
-              <li>
-                <a href="#">Software Design</a>
-              </li>
-              <li>
-                <a href="#">Digital Signage</a>
-              </li>
-              <li>
-                <a href="#">Automation</a>
-              </li>
-              <li>
-                <a href="#">Artificial Intelligence</a>
-              </li>
-              <li>
-                <a href="#">IoT</a>
-              </li>
-            </ul>
-          </li>
-          <li className="nav__item">
-            <h2 className="nav__title">Legal</h2>
-            <ul className="nav__ul">
-              <li>
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#">Terms of Use</a>
-              </li>
-              <li>
-                <a href="#">Sitemap</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div className="legal">
-          <p>© 2024 Something. All rights reserved.</p>
+
+ 
+
+
+        <div className="footer-address">
+
+          <h3>Contact Info</h3>
+          {/* <h5><span><IoLocationSharp /></span> Near Muthumalai Murugan Kovil Opposite, <br /> Agathiyar Siddha Hospital, <br /> 15th Ward Puthiragoundampalayam, <br /> Yethappur, Salem - 636 119</h5> */}
+          <p><span><IoLocationSharp /></span>Near Muthumalai Murugan Kovil Opposite,Agathiyar Siddha Hospital,15th Ward Puthiragoundampalayam,Yethappur, Salem - 636 119</p>
         </div>
-      </footer>
-    </>
+
+      </div> 
+
+     
+
+      <div className="footer-links-parent">
+
+  
+
+        <div className="footer-services-links">
+
+          <h3>Helpful Links</h3>
+          <ul>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/aboutUs'>About us</Link></li>
+            <li><Link to='/contactUs'>Contact us</Link></li>
+          </ul>
+
+        </div>
+
+        <div className="footer-services-links">
+
+          <h3>About Nadi Astrology</h3>
+          <ul>
+          <li><Link to='/nadiAstrology'>Nadi Astrology</Link></li>
+          <li><Link to='/nadiProcedure'>Nadi Procedure</Link></li>
+          </ul>
+
+        </div>
+
+        <div className="footer-services-links">
+
+          <h3>Our Services</h3>
+          <ul>
+            <li><Link to='/onlineServices'>Online Services</Link></li>
+            <li><Link to='/chapters'>Chapters</Link></li>
+            <li><Link to='/Homam'>Homam Poojai</Link></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+    <h5><span>&copy;</span>{`${d.getFullYear()} Agasthiya Nadi Sastralayam. All rights reserved`}</h5>
+
+  </div>
+
+
   );
 };
 

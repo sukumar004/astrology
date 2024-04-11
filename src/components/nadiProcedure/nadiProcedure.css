@@ -20,7 +20,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(2px);
+    filter: blur(3px);
 }
 
 .nadi-procedure-heading{
@@ -70,7 +70,8 @@
     align-items: center;
     padding: 2rem 1rem 3rem 1rem; 
     /* border: 5px solid orange; */
-    background-color: var(--bg2);
+    /* background-color: var(--bg2); */
+    background-color: #1B2131;
 }
 
 .nadi-procedure-image-list:nth-of-type(odd){
@@ -123,7 +124,7 @@
     word-wrap: break-word;   
     line-height: 3rem; 
     font-weight: 800;
-    color: var(--color8);
+    color: var(--color9);
     
 }
 
@@ -133,6 +134,116 @@
     line-height: 1.8rem;
     margin: 1.5rem 0;
     text-align: justify;
-    color: var(--color3);
+    color: var(--color6);
     font-weight: 600;
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .nadi-procedure-heading{
+        width: 100vw;
+        height: 15rem;
+    }
+
+    .nadi-procedure-heading::before{
+        width: 100vw;
+        height: 15rem;
+        filter: blur(5px);
+    }
+
+    .nadi-procedure-image-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 35rem;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        border-radius: 10px;
+    }
+
+    .nadi-procedure-image{
+        padding: 0;
+    }
+
+    .nadi-procedure-image img{
+        width: 35rem;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom: 5px solid var(--color6);
+
+    }
+
+    .nadi-procedure-list p{
+        padding: 0 2rem;
+        font-size: .8rem;
+        /* color: var(--color9); */
+    }
+
+    .nadi-procedure-list h4{
+        padding: 0 2rem;
+        font-size: 1.4rem;
+        /* color: var(--color6); */
+    }
+
+    .nadi-procedure-listing-parent{
+        width: 100%;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }    
+}
+
+
+@media screen and (max-width:768px) {
+
+    .nadi-procedure-image-list{
+        width: 20rem;
+    }
+
+    .nadi-procedure-image img{
+        width: 20rem;
+        height: 18rem;
+        border-bottom: 5px solid var(--color6);
+    }
+
+    .nadi-procedure-listing-parent{
+        width: 100%;
+        /* margin: 0 5%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 5rem;
+    }
+
+    .nadi-procedure-listing{
+        margin: 0;
+    }
+
+    .nadi-procedure-heading h1{
+        font-size: 2rem;
+    }
+
+    .nadi-procedure-list-title{
+        margin-bottom: -2rem;
+    }
+
+    .nadi-procedure-list-title h3{
+        font-size: 1.5rem;
+        margin-bottom: -3.5rem;
+    }
+
+    .nadi-procedure-heading{
+        height: 13rem;
+    }
+
+    .nadi-procedure-list{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
 }

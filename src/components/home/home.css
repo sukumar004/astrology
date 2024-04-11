@@ -9,17 +9,21 @@
 
 .home-header-bottom-section {
   width: 100%;
-  height: 80vh;
+  height: 60vh;
+  height: auto;
+  padding: 3rem 2rem;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
   background-color: #f78849;
   background-image: linear-gradient(62deg, #f78849 0%, #f7ce68 100%);
-  /* background-image: url('./bg-17.jpeg'); */
+  /* background-image: url('./bg-21.jpeg'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: cover;
+  /* background-attachment: scroll; */
 }
 
 .home-header-bottom-section-img {
@@ -63,19 +67,23 @@
 .home-header-bottom-section-title h1 {
   font-size: 3rem;
   word-wrap: break-word;
-  line-height: 4rem;
+  line-height: 4.5rem;
   margin: 0;
   font-weight: 800;
+  margin-bottom:1rem;
+  color: var(--color8);
+  letter-spacing: 2px;
 }
 
 .home-header-bottom-section-title h3 {
   font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .home-header-bottom-section-title p button {
   font-size: 1rem;
   padding: 0.3rem;
-  background: transparent;
+  background-color: var(--color8);
   border-radius: 5px;
   margin: 0 1rem 0 0;
   border: 3px solid var(--color1);
@@ -83,11 +91,18 @@
   transition: all;
   transition-duration: 250ms;
   font-weight: 600;
-  color: var(--color1);
+  color: var(--color6);
+  padding: 1rem;
+  letter-spacing: 1.5px;
 }
 
 .home-header-bottom-section-title p button:hover {
   border-color: var(--color6);
+  color: var(--color6);
+}
+
+.home-header-bottom-section-title p a{
+  text-decoration: none;
   color: var(--color6);
 }
 
@@ -140,16 +155,13 @@
 
 .nadi-astrology-home-page-bg h2 {
   width: 100%;
-  display: flex;
-  justify-content: center;
   font-size: 2.8rem;
-  color: var(--color9);
+  color: var(--color6);
   padding: 1rem 2rem;
-  /* margin-left: 10%; */
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   text-transform: capitalize;
   font-weight: 600;
-  text-decoration: underline;
+  text-align: center;
 }
 
 .home-page-naadi-procedure-top-parent {
@@ -304,4 +316,194 @@
   height: 50rem;
   border: 1px solid black;
   position: absolute;
+}
+
+@media screen and (max-width:1024px) {
+
+  .nadi-astrology-home-page-top-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nadi-astrology-home-page-top-parent h1, .home-page-naadi-procedure-top-parent h1, .home-our-service-page-top-parent h1{
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    line-height: 3rem;
+    margin-bottom: -3rem;
+  }
+
+  .home-header-bottom-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .home-header-bottom-section-title{
+    width: 100%;
+    margin-left: 3rem;
+  }
+
+  .home-header-bottom-section-title h1{
+    font-size: 2.5rem;
+  }
+
+  .home-header-bottom-section-title h3{
+    font-size: 1.5rem;
+  }
+
+  .home-header-bottom-section-img{
+    width: 100%;
+    margin-right: -6rem;
+  }
+
+  .home-header-bottom-section-img img{
+    width: 75%;
+  }
+
+
+  #home-page-famous-nadi-astrologer-id{
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    line-height: 3rem;
+    margin-bottom: -3rem;
+  }
+
+  .nadi-astrology-home-page-bg h2{
+    text-decoration: none;
+    font-size: 2rem;
+    padding-top:2rem;
+    text-align: center;
+  }
+
+  .home-page-naadi-procedure-top-parent{
+    margin-top: 8rem
+  }
+
+  #famous-manuscript-id,
+  #famous-badge-id {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    position: absolute;
+  }
+
+  #famous-badge-id {
+    left: 3rem;
+  }
+
+  #famous-manuscript-id {
+    right: 3rem;
+  }
+
+  .home-about-us-famous-heading h1{
+    font-size: 1.3rem;
+    color: var(--color4);
+  }
+
+  .home-about-us-bg h2{
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+}
+
+
+@media screen and (max-width:768px) {
+
+  .home-header-bottom-section-title h1{
+    font-size: 2.5rem;
+  }
+
+  .home-header-bottom-section-title h3{
+    font-size: 1.3rem;
+  }
+
+  .home-header-bottom-section-title p a button{
+    margin-bottom: 1rem;
+  }
+
+  .nadi-astrology-home-page-top-parent h1, .home-page-naadi-procedure-top-parent h1, .home-our-service-page-top-parent h1{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin-bottom: -3.5rem;
+  }
+
+  #home-page-famous-nadi-astrologer-id{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin-bottom: -3.5rem;
+  }
+
+  .nadi-astrology-home-page-bg{
+    margin-top: -1rem;
+  }
+  
+  .nadi-astrology-home-page-bg h2{
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .home-header-bottom-section{
+    padding: 5rem 3rem;
+  }
+
+  .home-header-bottom-section-img{
+    display: none;
+  }
+
+  #famous-manuscript-id,
+  #famous-badge-id {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    position: absolute;
+  }
+
+  #famous-badge-id {
+    left: 1rem;
+  }
+
+  #famous-manuscript-id {
+    right: 1rem;
+    /* border: 2px solid var(--color6); */
+
+  }
+
+  .home-about-us-famous-heading h1{
+    width: 55%;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--color4);
+  }
+
+  .home-about-us-bg{
+    margin-top: -1rem;
+  }
+
+  .home-about-us-bg h2{
+    font-size: 1.3rem;
+    line-height: 3rem;
+    margin-bottom: -1rem;
+  }
+
+  .home-page-location-map iframe{
+    width: 90%;
+  }
+
+  #home-page-famous-nadi-astrologer-id{
+    width: 60%;
+  }
+
+  #home-page-naadi-top-heading{
+    width: 70%;
+  }
+
+
 }

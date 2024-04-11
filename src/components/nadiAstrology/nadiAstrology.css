@@ -14,7 +14,7 @@
     background-size: cover;
     border-bottom-right-radius:100px;
     z-index: 999;
-    filter: blur(2px);
+    filter: blur(3px);
     /* filter: sepia(50%); */
 
 }
@@ -79,13 +79,79 @@
     letter-spacing: 1px;
 }
 
-.nadi-astrology-listing button{
+.nadi-astrology-listing h6{
+    width: fit-content;
     background: none;
-    border: none;
+    border-bottom: none;
     text-transform: capitalize;
     cursor: pointer;
     font-weight: 600;
     letter-spacing: 1.5px;
     color: var(--color8);
     font-weight: 700;
+    border-bottom: 2px solid white;
+
+}
+
+.nadi-astrology-listing h6:hover{
+    border-bottom-color:var(--color3);
+    transition: all;
+    transition-duration: 250ms;
+}
+
+@media screen and (max-width:1024px) {
+
+    .nadi-astrology-listing-parent{
+        width: 90%;
+        margin: 8rem 5%;
+    }
+
+    .nadi-astrology-heading{
+        width: 100vw;
+        height: 15rem;
+    }
+
+    .nadi-astrology-heading::before{
+        width: 100vw;
+        height: 15rem;
+        filter: blur(5px);
+    }
+
+    .nadi-astrology-listing{
+        width: 20rem;
+    }
+
+    .nadi-astrology-listing img{
+        width: 20rem;
+        height: 18rem;
+    }
+
+    .nadi-astrology-listing h3{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .nadi-astrology-listing p{
+        font-size: .8rem;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+
+    .nadi-astrology-heading{
+        height: 13rem;
+    }
+
+    .nadi-astrology-listing-parent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 5rem 0;
+    }
+
+    .nadi-astrology-heading h1{
+        font-size: 2rem;
+        /* color: var(--color6); */
+    }
 }

@@ -16,6 +16,7 @@
   scale: 1.1;
   transition: ease-in-out 0.3s;
 }
+
 .Link img {
   width: 150px;
   height: 100%;
@@ -47,4 +48,29 @@
 
 .bottom-link {
   bottom: 0 !important;
+}
+
+@media screen and (max-width:1024px) {
+
+  
+}
+
+@media screen and (max-width:768px) {
+
+  .Link{
+    right: -1rem;
+  }
+  .Link img{
+    width: 100px;
+    height: 100%;
+    right: 1rem;
+    /* display: block */
+  }
+
+  .scroll-to-top{
+    width: 35px;
+    height: 35px;
+    right: 1rem;
+  }
+  
 }

@@ -50,3 +50,33 @@
     background-color: var(--color4);
     color: var(--color1);
 }
+
+@media screen and (max-width:1024px) {
+
+    .languages-parent{
+    
+     grid-template-columns: repeat(3,minmax(0,1fr));
+        
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .languages-parent{
+        grid-template-columns: repeat(2,minmax(0,1fr))
+    }
+
+    .languages-top-parent h1{
+        font-size: 1.5rem;
+        line-height: 3rem;
+        margin-bottom: -4rem;
+    }
+
+    .languages-show-div h2{
+        font-size: .8rem;
+    }
+
+    #language-sysmbol-id{
+        font-size: 1.5rem;
+    }
+}

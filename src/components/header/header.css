@@ -2,6 +2,7 @@
 .header-top-parent{
     width: 100vw;
     height: 5rem;
+    height: 7rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -13,16 +14,51 @@
     position: sticky;
     top: 0;
     z-index: 99999999;
+    /* border-bottom: 5px solid var(--color1); */
+    /* border: 1px solid red; */
+    box-shadow: rgba(107, 36, 12, 0.35) 0px 5px 15px;
     
 }
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-logo-image img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.header-logo-title{
+    width: 50%;
+    /* border: 1px solid black; */
+    /* margin-left: -1rem; */
+    display: flex;
+}
+
+.header-logo-title a{
+    text-decoration: none;
+}
+.header-logo-title h1{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: var(--color1);
+    line-height: 1.8rem;
+    /* text-align: center; */
+}
+
 .header-nav-menu{
     display: flex;
     align-items: center;
+    /* border: 1px solid red; */
+
 }
 .header-nav-menu ul{
     display: flex;
     flex-direction: row;
-    position: relative;
+    /* border: 1px solid red; */
 }
 
 .header-nav-menu ul li{
@@ -33,12 +69,16 @@
     cursor: pointer;
     transition: all;
     transition-duration: 250ms;
-    border-bottom: 2px solid var(--color3);
-
+   
 }
 
 .header-nav-menu ul li:hover{
-    border-bottom-color:2px solid var(--color6);
+    color: var(--color3);
+}
+
+.header-nav-menu ul a{
+    color: var(--color8);
+    text-decoration: none;
 }
 
 
@@ -47,4 +87,267 @@
     padding: 8px 15px;
     border-radius: 15px;
     font-size: 16px;
+}
+
+.dropdown{
+    position: relative;
+    /* width: 8rem;
+    text-align: center;
+    display: inline-block; */
+    margin-right: 1rem;
+}
+
+.onlineServices_dropDown{
+    width: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 10px solid yellow; */
+}
+
+.nadi_astrology_dropDown{
+    width: 9rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+    margin-left: .5rem;
+    margin-right: 1.5rem;
+}
+
+.nadi_astrology_dropDown_content, .onlineServices_dropDown_content{
+    margin-top: 1rem;
+}
+
+.nadi_astrology_dropDown li span, .dropdown li span{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    /* margin-right: 1rem; */
+}
+
+.nadi_astrology_dropDown li, .onlineServices_dropDown li{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: .5rem;
+}
+
+.dropdown li{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items:stretch;
+    justify-content: space-around;
+}
+.dropdown-content ul {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    background-color: var(--color1);
+    padding: .5rem;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    box-shadow: rgba(107, 36, 12, 0.3) 0px 19px 38px, rgba(107, 36, 12, 0.22) 0px 15px 12px;
+    /* border-radius: 5px; */
+}
+
+.dropdown-content{
+    position: absolute;
+    /* display: none; */
+}
+
+.dropdown-content ul{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+
+.dropdown-content ul a{
+    width: 100%;
+    text-decoration: none;
+    /* color: var(--color8); */
+    color: var(--color6);
+    /* text-align: left; */
+    /* width: fit-content; */
+    width: 100%;
+    /* width:auto ; */
+    padding: 10px 13px;
+    padding: 1.5rem;
+    /* padding: 0; */
+}
+
+.dropdown-content ul{
+    padding: 0;
+}
+
+.dropdown-content ul li {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+
+#menu-id{
+    display: none;
+}
+
+.mobile_menu_nav{
+    display: none;
+}
+
+
+@media screen and (max-width:1024px) {
+    .header-nav-menu ul li{
+        font-size: .8rem;
+    }
+
+    .header-nav-menu ul{
+        width: max-content;
+        padding: 1rem;
+    }
+
+    .dropdown{
+        margin-right: 0;
+    }
+
+    .header-logo{
+        font-size: .5rem;
+    }
+
+    .nadi_astrology_dropDown{
+        width: 8rem;
+    }
+
+    .onlineServices_dropDown{
+        width: 5rem;
+    }
+
+    .dropdown-content ul li{
+        font-size: .8rem;
+    }
+
+    #menu-id{
+        display: none;
+    }
+
+    .mobile_menu_nav{
+        display: none;
+    }
+
+    .header-logo-title h1{
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .header-top-parent{
+        position: sticky;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .header-nav-menu{
+        display: none;
+    }
+
+    #menu-id{
+        font-size: 1.8rem;
+        position: absolute;
+        top: auto;
+        right: 2rem;
+        bottom: auto;
+        width: max-content;
+        display: inline-block;
+        cursor: pointer;
+
+    }
+
+    .header-logo{
+        position: absolute;
+        top: auto;
+        left: 1rem;
+    }
+
+    .mobile_menu_nav{
+        display: flex;
+        position: fixed;
+        width: 55%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        background-color: white;
+        transition: transform 0.2s ease-in;
+    }
+
+    .mobile_menu_nav ul{
+        width: 100%;
+        /* border: 1px solid red; */
+        padding-left: 0;
+    }
+
+    .mobile_menu_nav ul li {
+        width: 100%;
+        text-decoration: none;
+        list-style: none;
+        padding: 1rem 1rem;
+        /* border: 1px solid black; */
+        /* cursor: pointer; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* background-color: aqua; */
+    }
+
+    .mobile_menu_nav ul li span{
+        padding-right: 2rem;
+    }
+
+    #nav-close-button-id{
+        padding: .5rem 1rem .5rem .5rem;
+        float: right;
+        margin: 0;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .mobile_dropdown ul li{
+        margin-left: .5rem;
+        color: var(--color3);
+    }
+
+    .mobile_menu_nav ul a, .mobile_dropDown_heading li{
+        color: var(--color8);
+        list-style: none;
+        text-decoration: none;
+        font-weight: 800;
+    }
+
+    .header-logo-image img{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .header-logo-title{
+        width: 45%;
+        margin-left:-.5rem;
+        /* border: 1px solid black; */
+    }
+    
+    .header-logo-title h1{
+        font-size: .6rem;
+        letter-spacing: 3px;
+        color: var(--color1);
+        line-height: 1rem;
+        font-weight: 800;
+    }
+
+
+    
 }

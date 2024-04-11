@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './homeAboutUs.css'
 import { Link } from 'react-router-dom'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function HomeAboutUs() {
+
+  useEffect(()=>{
+    Aos.init()
+  },[])
+
   return (
-    <div className="home-about-us">
+    <div className="home-about-us" data-aos='fade-up' data-aos-duration='1000'>
 
       <div className="home-about-us-img">
         <img src="/images/photo.png" alt="Guruji K Muthulingam" />

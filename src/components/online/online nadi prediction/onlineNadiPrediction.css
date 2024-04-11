@@ -85,3 +85,44 @@
    color: var(--color8);
     /* border: 1px solid green; */
 }
+
+@media screen and (max-width:1024px) {
+    .online-nadi-prediction-listing{
+        display: flex;
+        flex-direction: column;
+    
+    }    
+
+    .online-nadi-data-list h4{
+        line-height: 1.8rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .online-nadi-prediction-heading h1{
+        text-align:  center;
+        line-height: 3.5rem;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .online-nadi-data-list{
+        align-items: first baseline;
+    }
+
+    .online-nadi-data-list h4{
+        font-size: .8rem;
+
+    }
+
+    .online-nadi-prediction-listing-img img{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .online-nadi-prediction-listing-content{
+        padding: 0;
+    }
+
+}

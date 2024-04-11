@@ -69,7 +69,7 @@
 
 #divider-id-nadi-procedure{
    width: 20vw;
-   margin: -4rem 0 0 0;   
+   margin: -3rem 0 0 0;   
 }
 
 .book-appointment-topic-div{
@@ -87,7 +87,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10rem 0;
+    padding: 9rem 0;
     opacity: .9;
     /* margin: -3rem 0 0 0; */
 
@@ -103,4 +103,39 @@
     font-size: 2.5rem;
     letter-spacing: 3px;
     color: var(--color1);
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .online-services-heading{
+        width: 100vw;
+        height: 15rem;
+        /* border-bottom-right-radius: 110px; */
+    }
+
+    .online-services-heading h1{
+        font-size: 3rem;
+    }
+
+    .book-appointment-top-parent{
+        padding: 3rem 0;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+
+   .online-services-heading h1{
+    font-size: 1.5rem;
+   }
+
+   .online-services-heading{
+    height: 13rem;
+   }
+
+   .book-appointment-topic-div{
+    margin-bottom: 3rem;
+   }
+    
 }

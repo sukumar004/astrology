@@ -46,13 +46,13 @@ function App() {
         <Route path="/" element={<Layout />}>
 
           <Route index element={<Home />} />
-          <Route path="/aboutUs" element = {<AboutUs />} />
-          <Route path="/chapters" element = {<Chapters />} />
-          <Route path="/onlineServices" element = {<OnlineServices />} />
-          <Route path="/contactUs" element = {<ContactUs />} />
-          <Route path="/Homam" element={<Homam />} />
-          <Route path="/nadiAstrology" element={<NadiAstrology />} />
-          <Route path="/nadiProcedure" element={<NadiProcedure />} />
+          <Route path="/aboutUs" element = {<AboutUs />} /> // Fully Completed
+          <Route path="/chapters" element = {<Chapters />} />  // Fully completed
+          <Route path="/onlineServices" element = {<OnlineServices />} />  // Fully completed
+          <Route path="/contactUs" element = {<ContactUs />} /> // Fully Completed
+          <Route path="/Homam" element={<Homam />} /> // Fully completed
+          <Route path="/nadiAstrology" element={<NadiAstrology />} /> // Fully completed
+          <Route path="/nadiProcedure" element={<NadiProcedure />} /> // Fully completed
 
 
         </Route>

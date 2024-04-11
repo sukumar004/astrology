@@ -35,8 +35,12 @@
 
 }
 
+.slick-arrow{
+  border: 1px solid black;
+}
+
 .slick-slide {
-  margin-left: 20px;
+  margin-left: 1rem;
 }
 
 .Slider {

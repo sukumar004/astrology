@@ -1,7 +1,13 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './onlineNadiProcedure.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function OnlineNadiProcedure() {
+
+    useEffect(()=>{
+        Aos.init({duration:1000})
+      },[])
 
     const data = [
     {
@@ -39,10 +45,10 @@ function OnlineNadiProcedure() {
 
     const cardListing = data.map((data,index)=>{
         return(
-            <div className="online-nadi-procedure-data-list" key={index}>
+            <div className="online-nadi-procedure-data-list" key={index} data-aos='fade-up'>
                 <h3>{`Step  ${data.id}`}</h3>
 
-                <div className="online-nadi-procedure-data-img-content">
+                <div className="online-nadi-procedure-data-img-content" >
 
                     <img src={data.img} alt={data.content} />
                     <p>{data.content}</p>

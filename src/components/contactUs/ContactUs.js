@@ -1,28 +1,35 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './contactUs.css';
 import { IoLocationSharp } from "react-icons/io5";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { RiWhatsappFill } from "react-icons/ri";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function ContactUs() {
+
+    useEffect(()=>{
+        Aos.init()
+      },[])
+
   return (
    
     <div className="contact-us-top-parent">
 
         <div className="contact-us-heading">
-            <h1>Contact us</h1>
+            <h1 data-aos='fade-up' data-aos-duration='1000'>Contact us</h1>
         </div>
         
         <div className="contact-us-heading-divider">
-        <h2 id='contact-us-getInTouch'>Get in touch with us</h2>
+        <h2 id='contact-us-getInTouch' data-aos='zoom-up' data-aos-duration='1000'>Get in touch with us</h2>
         <img src="/svg/divider3.svg" alt="divider" id='divider-id' />
         </div>
 
 
         <div className="contact-us-address-parent">
 
-            <div className="contact-us-address">
+            <div className="contact-us-address" data-aos='fade-right' data-aos-duration='1000'>
 
                 <div className="contact-us-phone-number">
                     <h4>Number</h4>
@@ -54,7 +61,7 @@ function ContactUs() {
 
             </div>
 
-            <div className="contact-us-form-parent">
+            <div className="contact-us-form-parent" data-aos='fade-left' data-aos-duration='1000'>
 
                 <h3>Send us a Message</h3>
 
@@ -69,6 +76,7 @@ function ContactUs() {
 
         </div>
 
+        <div className="iframe">
      
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1099.5645926129664!2d78.48392532567756!3d11.650986126825055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1704827991459!5m2!1sen!2sin"
@@ -76,10 +84,12 @@ function ContactUs() {
           height="450"
           allowfullscreen=""
           loading="lazy"
+          id='iframe-id'
           referrerpolicy="no-referrer-when-downgrade"
           style={{margin:'5rem 0 0 0'}}
         ></iframe>
-
+        
+        </div>
 
     </div>
 

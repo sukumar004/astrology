@@ -16,17 +16,18 @@
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     text-transform: capitalize;
-    font-weight: 900;
+    font-weight: 600;
     color: var(--color8);
+    margin-top: 3rem;
 }
 
 .home-page-naadi-procedure{
     width: 80%;
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     margin: 2rem 0;
 
@@ -43,7 +44,7 @@
 
 .home-page-naadi-procedure-img img{
     width: 28rem;
-    height: 22rem;
+    height: 25rem;
     margin: 0 4rem 0 0;
     border-radius: 10px;
     /* border: 1px solid red; */
@@ -63,4 +64,95 @@
     letter-spacing: 1px;
     text-align: justify;
     color: var(--color1);
+    line-height: 1.8rem;
+}
+
+.home-page-naadi-procedure-para span{
+    text-indent: 1.5rem;
+}
+
+#read-more-id-nadi-procedure{
+    text-align: right;
+    width: max-content;
+    margin-right: 2rem;
+    float: right;
+    color: var(--color8);
+    border-bottom: 3px solid var(--color8);
+
+}
+
+@media screen and (max-width:1024px) {
+    
+    .home-page-naadi-procedure{
+        width: 90%;
+        margin: 5rem 10% 0 5%;
+        padding-top:2rem;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .home-page-naadi-procedure-img{
+        width: max-content;
+        padding: 0 2rem 2rem 2rem;
+        /* border-right: 5px solid var(--color1); */
+    }
+
+    .home-page-naadi-procedure-img img{
+        width: 20rem;
+        height: 23rem; 
+        /* border: 10px solid var(--color1); */
+    }
+
+    .home-page-naadi-procedure-para{
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .home-page-naadi-procedure-para p{
+        font-size: .9rem
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+
+    .naadi-procedure-home-page{
+        margin-top: -1rem;
+    }
+
+    .naadi-procedure-home-page h1{
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    
+    .home-page-naadi-procedure{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5rem 0 1rem 0;
+    }
+
+    .home-page-naadi-procedure-img img{
+        width: 19rem;
+        height: 20rem;  
+        margin: 0;
+    }
+
+    .home-page-naadi-procedure-para p span{
+       padding: 0 2rem;
+    }
+
+    #read-more-id-nadi-procedure{
+        text-align: right;
+        width: max-content;
+        margin-right: 2rem;
+        float: right;
+        color: var(--color8);
+        border-bottom: 3px solid var(--color8);
+    
+    }
+
 }
