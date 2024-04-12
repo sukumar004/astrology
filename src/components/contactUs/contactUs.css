@@ -336,6 +336,17 @@
         height: 2.5rem;
     }
 
+    .contact-us-phone-number{
+        padding-left: 1rem;
+    }
+
+    .contact-us-phone-number h3{
+        
+    }
+    .contact-us-phone-number h4{
+        margin-right: 0;
+        margin-left: 0;
+    }
 
     
     .contact-us-form-parent{
