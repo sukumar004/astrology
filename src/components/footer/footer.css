@@ -128,18 +128,19 @@
   cursor: pointer;
   display: flex;
   line-height: 1.3rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-weight: 500;
   /* color: #31363F; */
   /* color: #61677A; */
   /* color: #555843; */
   color: var(--color10);
-  /* margin-left: 0rem; */
+  margin-left: 2rem;
 }
 
 .footer-address p span{
   font-size: 1.3rem;
   margin: 0 .5rem;
+  display: none;
 }
 
 .footer-address p:hover{
