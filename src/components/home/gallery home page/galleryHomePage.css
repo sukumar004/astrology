@@ -10,13 +10,13 @@
   width: 100%;
 }
 
-.gallerrHomePage-title{
+.gallerrHomePage-title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.gallerrHomePage-title h1{
+.gallerrHomePage-title h1 {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -27,15 +27,14 @@
   margin: 0 0 2rem -10rem;
 }
 
-.gallerrHomePage-title img{
+.gallerrHomePage-title img {
   width: 20vw;
   /* border: 1px solid black; */
   height: 10rem;
   margin: -4rem 0 2rem -10rem;
-
 }
 
-.slick-arrow{
+.slick-arrow {
   border: 1px solid black;
 }
 
@@ -48,6 +47,13 @@
   height: 500px;
 }
 
-.slick-dots{
+@media (max-width: 768px) {
+  .Slider {
+    max-width: 350px;
+    height: 500px;
+  }
+}
+
+.slick-dots {
   margin-bottom: -1rem;
 }
